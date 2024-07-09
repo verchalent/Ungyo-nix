@@ -30,8 +30,8 @@
             la = "lsd -la";
             ll = "lsd -l";
             ls = "lsd";
-            nixswitch = "darwin-rebuild switch --flake ~/src/macos-nix-basic/.#";
-            nixup = "pushd ~/src/macos-nix-basic; nix flake update; nixswitch; popd"; #update env based on latest config
+            nixswitch = "darwin-rebuild switch --flake ~/src/Ungyo-nix/.#";
+            nixup = "pushd ~/src/Ungyo-nix; nix flake update; nixswitch; popd"; #update env based on latest config
             nixclean = "nix-store --gc"; # Clean local nix store
             powershell = "pwsh";
             ps = "procs";    
