@@ -9,6 +9,18 @@
 # Disable Click Wallpaper to reveal desktop
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
+# Dock
+defaults write com.apple.dock "autohide" -bool "true" #autohide
+defaults write com.apple.dock "tilesize" -int "55" # Set Icon Size for desktop panel
+defaults write com.apple.dock "orientation" -string "left" # Dash on Left
+
+
+# Remove trash after 30 days
+defaults write com.apple.finder "FXRemoveOldTrashItems" -bool "true"
+
+# Default to List View in Finder
+defaults write com.apple.finder "FXPreferredViewStyle" -string "Nlsv"
+
 ##########################
 # Notification Settings
 ##########################
