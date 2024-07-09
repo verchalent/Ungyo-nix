@@ -29,7 +29,7 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.justinstokes.imports = [ ./modules/home-manager ];
+            users.justin.imports = [ ./modules/home-manager ];
           };
         }
       ];

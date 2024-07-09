@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  users.users.justinstokes.home = "/Users/justin";
+  users.users.justin.home = "/Users/justin";
   imports = [./brew.nix];
   programs.zsh.enable = true;
   environment = {

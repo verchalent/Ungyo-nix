@@ -76,5 +76,4 @@
   home.file.".config/zellij/config.kdl".source=./dotfiles/zellij.kdl;
   home.file.".inputrc".source = ./dotfiles/inputrc;
   home.file.".p10k.zsh".source = ./dotfiles/p10k.zsh;
-  home.file.".wezterm.lua".source = ./dotfiles/wezterm.lua;
 }
