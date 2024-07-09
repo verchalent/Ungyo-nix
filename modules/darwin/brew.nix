@@ -13,9 +13,7 @@
       };
     masApps = { }; # Move to seperate file when used
     taps = [
-        "homebrew/core"
         "homebrew/bundle"
-        "homebrew/cask"
         "homebrew/services"
         "fujiapple852/trippy" 
         ];
