@@ -16,7 +16,6 @@
         "homebrew/core"
         "homebrew/bundle"
         "homebrew/cask"
-        "homebrew/cask-fonts"
         "homebrew/services"
         "fujiapple852/trippy" 
         ];
