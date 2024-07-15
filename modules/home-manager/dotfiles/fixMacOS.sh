@@ -21,6 +21,9 @@ defaults write com.apple.finder "FXRemoveOldTrashItems" -bool "true"
 # Default to List View in Finder
 defaults write com.apple.finder "FXPreferredViewStyle" -string "Nlsv"
 
+# Spaces
+defaults write com.apple.spaces "spans-displays" -bool "false" # Turn off seperate spaces for each screen
+
 ##########################
 # Notification Settings
 ##########################
