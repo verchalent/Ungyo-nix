@@ -73,17 +73,21 @@
       {
         name = "visual-studio-code"; # Make code pretty
         greedy = true;
-      }  
+      }
+      {
+        name = "whiskey"; # MacOS implementation of Wine Bottles for running windows apps
+        greedy = true;
+      }
       {
         name = "wireshark"; # Network packat analysis
         greedy = true;
       }
     ];
     brews = [ 
-      "awscli"
-      "fzf"
-      "trippy"
-      "zoxide"
+      "awscli" # Breaks when done nix native
+      "fzf" # Nix native is behind
+      "trippy" # Move to Nix native ?
+      "zoxide" # Nix native is behind
       ]; 
   };
 }
