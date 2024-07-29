@@ -79,7 +79,7 @@
         greedy = true;
       }
       {
-        name = "whiskey"; # MacOS implementation of Wine Bottles for running windows apps
+        name = "whisky"; # MacOS implementation of Wine Bottles for running windows apps
         greedy = true;
       }
       {
