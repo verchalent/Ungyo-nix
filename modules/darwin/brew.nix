@@ -11,7 +11,9 @@
     global = {
       brewfile = true;
       };
-    masApps = { }; # Move to seperate file when used
+    masApps = { 
+      "Enchanted LLM" = 6474268307;
+    }; # Mac Store apps via Brew MAS - https://mynixos.com/nix-darwin/option/homebrew.masApps
     taps = [
         "homebrew/bundle"
         "homebrew/services"
