@@ -21,11 +21,7 @@
       {
         name = "alacritty"; # Terminal
         greedy = true;
-      }
-      {
-        name = "ava"; # Testing additional llm client to replace ollamac 
-        greedy = true;
-      }      
+      }    
       {
         name = "amazon-workspaces"; # Client for AWS DAAS
         greedy = true;
