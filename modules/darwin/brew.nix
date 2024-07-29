@@ -55,6 +55,10 @@
         greedy = true;
       }
       {
+        name = "ollamac"; #ollama mac front end
+        greedy = true;
+      }
+      {
         name = "podman-desktop"; # control pods
         greedy = true;
       }
@@ -86,6 +90,7 @@
     brews = [ 
       "awscli" # Breaks when done nix native
       "fzf" # Nix native is behind
+    # "ollama" # ollama llm engine. Temp blocked until manual install removed
       "trippy" # Move to Nix native ?
       "zoxide" # Nix native is behind
       ]; 
