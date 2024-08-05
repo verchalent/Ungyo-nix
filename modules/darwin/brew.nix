@@ -38,6 +38,10 @@
         greedy = true;
       }
       {
+        name = "disk-inventory-x";
+        greedy = true;
+      }
+      {
         name = "firefox"; # web browsing goodness
         greedy = true;
       }
