@@ -27,8 +27,27 @@ This shell script uses the defaults command to set the following:
 6) Sets default Finder view to List
 7) Turns off seperate spaces for each screen
 
-### nixup
-Once installed, you can run ``nixup`` in the terminal to fully update the flake.
+## Aliases
 
 ### nixclean
-Once installed, you can run ``nixclean`` to empty old build cache.
+Run ``nixclean`` to empty old build cache. Alias for ``nix-store --gc``
+
+### nixup
+Run ``nixup`` in the terminal to fully update the flake. Alias for ``pushd ~/src/Ungyo-nix; nix 
+flake update; nixswitch; popd``
+
+### nixswitch
+``darwin-rebuild switch --flake ~/src/Ungyo-nix/.#``
+
+### App Aliases
+cat = bat
+cd = z
+explorer = open (For when fingers forget it's not windows)
+find = fd
+la = lsd -la
+ll = lsd -l
+ls = lsd
+powershell = pwsh
+ps = procs
+ssh = ``TERM=xterm-256color $(which ssh)`` This avoids formatting issues when remoting to a system that does not understand the terminal type alacrity.
+vi = hx
