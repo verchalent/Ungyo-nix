@@ -49,5 +49,5 @@ ll = lsd -l
 ls = lsd
 powershell = pwsh
 ps = procs
-ssh = ``TERM=xterm-256color $(which ssh)`` This avoids formatting issues when remoting to a system that does not understand the terminal type alacrity.
+ssh = ``TERM=xterm-256color /usr/bin/ssh`` This avoids formatting issues when remoting to a system that does not understand the terminal type alacrity.
 vi = hx
