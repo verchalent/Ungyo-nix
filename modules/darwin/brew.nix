@@ -38,6 +38,10 @@
         greedy = true;
       }
       {
+        name = "google-chrome"; # Cleanup the sys tray
+        greedy = true;
+      }
+      {
         name = "disk-inventory-x";
         greedy = true;
       }
