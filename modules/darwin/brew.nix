@@ -30,6 +30,10 @@
         greedy = true;
       }    
       {
+        name = "amazon-chime"; # Client for AWS DAAS
+        greedy = true;
+      }
+      {
         name = "amazon-workspaces"; # Client for AWS DAAS
         greedy = true;
       }
