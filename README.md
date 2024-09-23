@@ -40,14 +40,14 @@ flake update; nixswitch; popd``
 ``darwin-rebuild switch --flake ~/src/Ungyo-nix/.#``
 
 ### App Aliases
-cat = bat
-cd = z
-explorer = open (For when fingers forget it's not windows)
-find = fd
-la = lsd -la
-ll = lsd -l
-ls = lsd
-powershell = pwsh
-ps = procs
-ssh = ``TERM=xterm-256color /usr/bin/ssh`` This avoids formatting issues when remoting to a system that does not understand the terminal type alacrity.
-vi = hx
+cat = bat   
+cd = z  
+explorer = open (For when fingers forget it's not windows)  
+find = fd  
+la = lsd -la  
+ll = lsd -l  
+ls = lsd  
+powershell = pwsh  
+ps = procs  
+ssh = ``TERM=xterm-256color /usr/bin/ssh`` This avoids formatting issues when remoting to a system that does not understand the terminal type alacrity.  
+vi = hx  
