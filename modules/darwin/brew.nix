@@ -59,11 +59,11 @@
         greedy = true;
       }
       {
-        name = "igrep"; #  Firewall
+        name = "igrep"; #  Testing
         greedy = true;
       }     
       {
-        name = "lulu"; #  TESTING 
+        name = "lulu"; #  Firewall 
         greedy = true;
       }
       {
