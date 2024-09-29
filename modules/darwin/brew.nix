@@ -23,7 +23,7 @@
         "homebrew/bundle"
         "homebrew/services"
         "fujiapple852/trippy"
-        "konradsz/igrep"
+        "konradsz/igrep https://github.com/konradsz/igrep.git"
         ];
     casks = [ 
       {
