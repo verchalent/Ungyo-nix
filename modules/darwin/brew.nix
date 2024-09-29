@@ -23,7 +23,11 @@
         "homebrew/bundle"
         "homebrew/services"
         "fujiapple852/trippy"
-        "konradsz/igrep https://github.com/konradsz/igrep.git"
+        {
+          name = "konradsz/igrep";
+          clone_target = "https://github.com/konradsz/igrep.git";
+          force_auto_update = true;
+        }
         ];
     casks = [ 
       {
