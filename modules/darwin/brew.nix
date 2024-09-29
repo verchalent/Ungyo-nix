@@ -83,7 +83,7 @@
         greedy = true;
       }
       {
-        name = "podman-desktop"; # control pods
+        name = "podman-desktop"; # Apple Silicon missing in brew ?
         greedy = true;
       }
       {
