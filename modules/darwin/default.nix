@@ -5,7 +5,11 @@
   environment = {
     shells = with pkgs; [ bash zsh ];
     loginShell = pkgs.zsh;
-    systemPackages = [ pkgs.coreutils ];
+    systemPackages = [ 
+      pkgs.coreutils
+      pkgs.inlyne  #testing
+      pkgs.sniffnet #testing
+    ];
     systemPath = [ "/opt/homebrew/bin" ];
     pathsToLink = [ "/Applications" ];
   };

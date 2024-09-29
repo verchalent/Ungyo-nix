@@ -22,7 +22,8 @@
     taps = [
         "homebrew/bundle"
         "homebrew/services"
-        "fujiapple852/trippy" 
+        "fujiapple852/trippy"
+        "konradsz/igrep"
         ];
     casks = [ 
       {
@@ -42,7 +43,7 @@
         greedy = true;
       }
       {
-        name = "google-chrome"; # Cleanup the sys tray
+        name = "google-chrome"; # Cuz some sites are dumb
         greedy = true;
       }
       {
@@ -58,7 +59,11 @@
         greedy = true;
       }
       {
-        name = "lulu"; #  Firewall
+        name = "igrep"; #  Firewall
+        greedy = true;
+      }     
+      {
+        name = "lulu"; #  TESTING 
         greedy = true;
       }
       {
