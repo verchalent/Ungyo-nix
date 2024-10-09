@@ -11,7 +11,7 @@
     global = {
       brewfile = true;
       };
-    masApps = { l
+    masApps = {
       Keynote = 409183694; # added to force updates
       iMovie = 408981434; # added to force updates
       Pages = 409201541; # added to force updates
