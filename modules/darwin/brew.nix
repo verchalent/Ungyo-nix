@@ -11,8 +11,7 @@
     global = {
       brewfile = true;
       };
-    masApps = { 
-      "Enchanted LLM" = 6474268307; # Ollama tool
+    masApps = { l
       Keynote = 409183694; # added to force updates
       iMovie = 408981434; # added to force updates
       Pages = 409201541; # added to force updates
@@ -61,11 +60,7 @@
       {
         name = "geany"; # notepad++ replacement
         greedy = true;
-      }
-      {
-        name = "igrep"; #  Testing
-        greedy = true;
-      }     
+      } 
       {
         name = "lulu"; #  Firewall 
         greedy = true;
@@ -75,7 +70,7 @@
         greedy = true;
       }
       {
-        name = "microsoft-remote-desktop"; # RDP client
+        name = "windows-app"; # RDP client
         greedy = true;
       }
       {
@@ -115,6 +110,7 @@
       "awscli" # Breaks when done nix native
       "fzf" # Nix native is behind
     # "ollama" # ollama llm engine. Temp blocked until manual install removed
+      "igrep"
       "trippy" # Move to Nix native ?
       "zoxide" # Nix native is behind
       ]; 
