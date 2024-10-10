@@ -31,7 +31,7 @@
       };
       
       alf = {
-        globalstate = 1; # Enable the internal firewall
+        globalstate = 0; # Disable the internal firewall - Changed 10.10.24 due to 15.0.1 dropping network non-stop
         loggingenabled = 1; # Enable logging of requests made to the firewall
         stealthenabled = 1; # Drop incoming icmp
       };
