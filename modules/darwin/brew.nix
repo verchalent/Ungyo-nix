@@ -77,10 +77,10 @@
         name = "obsidian"; # 2nd Brain
         greedy = true;
       }
-      {
+/*       {
         name = "podman-desktop"; # Apple Silicon missing in brew ?
         greedy = true;
-      }
+      } */
       {
         name = "raycast" ; # Spotlight replacement
         greedy = true;
