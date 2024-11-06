@@ -4,7 +4,7 @@
   programs.zsh.enable = true;
   environment = {
     shells = with pkgs; [ bash zsh ];
-    loginShell = pkgs.zsh;
+#   loginShell = pkgs.zsh;
     systemPackages = [ 
       pkgs.coreutils
       pkgs.inlyne  #testing
