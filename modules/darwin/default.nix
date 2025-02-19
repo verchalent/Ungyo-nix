@@ -23,7 +23,7 @@
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.nerd-fonts.meslo-lg
     ];
-  services.nix-daemon.enable = true;
+#  services.nix-daemon.enable = true; # Depricated. Breaking build 02.2025
 
   system = {
   
