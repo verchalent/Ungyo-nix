@@ -54,7 +54,14 @@
     enableZshIntegration = true;
   };
 
-  programs.git.enable = true;
+  programs.git = { #Nix was smashing git config. Added 03.25
+    enable = true;
+    userName = "PestyLint";
+    userEmail = "me@example.com";
+    includes = [
+      { path = "~/.gitconfig.local"; }
+    ];
+  };
 
   programs.thefuck = {
     enable = true;
@@ -76,4 +83,5 @@
   home.file.".config/zellij/config.kdl".source=./dotfiles/zellij.kdl;
   home.file.".inputrc".source = ./dotfiles/inputrc;
   home.file.".p10k.zsh".source = ./dotfiles/p10k.zsh;
+  home.file.".config/direnv/direnvrc".source = ./dotfiles/direnvrc; 
 }

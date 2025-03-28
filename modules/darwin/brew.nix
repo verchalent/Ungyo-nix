@@ -32,21 +32,17 @@
       {
         name = "alacritty"; # Terminal
         greedy = true;
-      }    
+      }  
       {
-        name = "amazon-chime"; # Client for AWS DAAS
+        name = "alt-tab"; # Enhanced Cmd + Tab behavior akin to Windows
         greedy = true;
-      }
+      }  
       {
         name = "amazon-workspaces"; # Client for AWS DAAS
         greedy = true;
       }
       {
         name = "bartender"; # Cleanup the sys tray
-        greedy = true;
-      }
-      {
-        name = "google-chrome"; # Cuz some sites are dumb
         greedy = true;
       }
       {
