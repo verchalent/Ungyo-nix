@@ -3,8 +3,7 @@
     ./zsh.nix
     ./tmux.nix
     ];
-  # Don't change this when you change package input. Leave it alone.
-  home.stateVersion = "24.05";
+  home.stateVersion = "24.11";
   # specify my home-manager configs
   home.packages = with pkgs; [
     curl
