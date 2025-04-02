@@ -2,49 +2,26 @@
 
 # Script to change additional MacOS and app settings outside of nix
 
-##########################
-# Desktop and Dock Settings
-##########################
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
 
-# Disable Click Wallpaper to reveal desktop
-defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+# Set Wallpaper
+osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$(dirname "$PWD")/wallpaper/JackFrost.jpg\""
 
 # Dock
-defaults write com.apple.dock "autohide" -bool "true" #autohide
-defaults write com.apple.dock "tilesize" -int "55" # Set Icon Size for desktop panel
-defaults write com.apple.dock "orientation" -string "left" # Dash on Left
+defaults write com.apple.dock persistent-apps -array # Remove all persistent apps from the Dock  !!ONLY RUN ON FIRST RUN!!
 
 
-# Remove trash after 30 days
-defaults write com.apple.finder "FXRemoveOldTrashItems" -bool "true"
+#Desktop Services
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true # Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true # Avoid creating .DS_Store files on USB volumes
 
-# Default to List View in Finder
-defaults write com.apple.finder "FXPreferredViewStyle" -string "Nlsv"
-
-# Spaces
-defaults write com.apple.spaces "spans-displays" -bool "false" # Turn off seperate spaces for each screen
-
-##########################
-# Notification Settings
-##########################
+# Finder
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+	General -bool true \
+	OpenWith -bool true \
+	Privileges -bool true
 
 # Disable Notification Center and remove the menu bar icon
-# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null # Doesn't work properly :(
-
-
-
-##########################
-# Default App Settings
-##########################
-
-
-##########################
-# Keyboard shortcut Changes
-##########################
-
-
-##########################
-# Raycast Settings
-##########################
-
-# turn off game mode
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null #need to test this
