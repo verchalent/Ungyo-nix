@@ -104,6 +104,7 @@
     # "ollama" # ollama llm engine. Temp blocked until manual install removed
       "igrep"
       "trippy" # Move to Nix native ?
+      "uv" # Python Package Manager
       "zoxide" # Nix native is behind
       ]; 
   };
