@@ -20,7 +20,8 @@
     ];
 
   system = {
-  
+    primaryUser = "justin";
+
     stateVersion = 4;
 
     defaults = {
