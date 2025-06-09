@@ -10,7 +10,7 @@ brew upgrade
 brew cleanup --prune=all
 
 # Update and clean up Nix
-pushd ~/src/Toyotama-Nix
+pushd ~/src/Ungyo-Nix
 nix flake update
-sudo darwin-rebuild switch --flake /Users/justin/src/Toyotama-Nix/.#
+sudo darwin-rebuild switch --flake /Users/justin/src/Ungyo-Nix/.#
 popd
