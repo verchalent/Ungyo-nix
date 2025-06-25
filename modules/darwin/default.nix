@@ -29,12 +29,6 @@
         ShowCategory = 101; # Show All Processes, Hierarchally as default
       };
       
-      alf = {
-        globalstate = 0; # Disable the internal firewall - Changed 10.10.24 due to 15.0.1 dropping network non-stop
-        loggingenabled = 1; # Enable logging of requests made to the firewall
-        stealthenabled = 1; # Drop incoming icmp
-      };
-      
       dock = {
         autohide = true; # Autohide Dock  
         launchanim = false; # Turn off Animate opening applications from the Dock
