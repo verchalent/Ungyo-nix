@@ -32,7 +32,7 @@
             ll = "lsd -l";
             ls = "lsd";
             nixswitch = "darwin-rebuild switch --flake ~/src/Ungyo-nix/.#";
-            nixup = "brewup; pushd ~/src/Ungyo-nix; nix flake update; nixswitch; popd"; #update env based on latest config
+            nixup = "brewup; pushd ~/src/Ungyo-nix; ./modules/home-manager/scripts/nixup.sh; popd"; #update env based on latest config
             nixclean = "nix-store --gc"; # Clean local nix store
             powershell = "pwsh";
             ps = "procs";    
