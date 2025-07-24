@@ -4,7 +4,7 @@
     enable = true;
     caskArgs.no_quarantine = true;
     onActivation = {
-      autoUpdate = false;
+      autoUpdate = true;
       upgrade = true;
       cleanup = "uninstall";
     };
@@ -78,10 +78,6 @@
         greedy = true;
       }
       {
-        name = "signal"; #Desktop client for Signal
-        greedy = true;
-      }
-      {
         name = "spotify"; #Muzak
         greedy = true;
       }
@@ -89,19 +85,11 @@
         name = "visual-studio-code"; # Make code pretty
         greedy = true;
       }
-      {
-        name = "whisky"; # MacOS implementation of Wine Bottles for running windows apps
-        greedy = true;
-      }
-      {
-        name = "wireshark"; # Network packat analysis
-        greedy = true;
-      }
     ];
     brews = [ 
       "awscli" # Breaks when done nix native
       "fzf" # Nix native is behind
-    # "ollama" # ollama llm engine. Temp blocked until manual install removed
+      "oh-my-posh"
       "igrep"
       "trippy" # Move to Nix native ?
       "uv" # Python Package Manager
