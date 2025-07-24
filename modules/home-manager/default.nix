@@ -2,8 +2,9 @@
   imports = [
     ./zsh.nix
     ./tmux.nix
+    ./nu.nix
     ];
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.05";
   # specify my home-manager configs
   home.packages = with pkgs; [
     curl
@@ -77,5 +78,9 @@
   home.file.".config/zellij/config.kdl".source=./dotfiles/zellij.kdl;
   home.file.".inputrc".source = ./dotfiles/inputrc;
   home.file.".p10k.zsh".source = ./dotfiles/p10k.zsh;
-  home.file.".config/direnv/direnvrc".source = ./dotfiles/direnvrc; 
+  home.file.".config/direnv/direnvrc".source = ./dotfiles/direnvrc;
+  home.file.".config/geany/colorschemes/retro.config".source = ./dotfiles/retro.conf;
+  home.file.".config/geany/geany.conf".source = ./dotfiles/geany.conf;
+  home.file.".config/helix/config.toml".source = ./dotfiles/helix.toml;
+  home.file.".config/ohmyposh/ohmyposh-nu.json".source = ./dotfiles/ohmyposh-nu.json;
 }
