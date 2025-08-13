@@ -38,19 +38,15 @@
         greedy = true;
       }  
       {
-        name = "amazon-workspaces"; # Client for AWS DAAS
-        greedy = true;
-      }
-      {
         name = "bartender"; # Cleanup the sys tray
         greedy = true;
       }
       {
-        name = "disk-inventory-x";
+        name = "brave-browser"; # Brave browser
         greedy = true;
       }
       {
-        name = "firefox"; # web browsing goodness
+        name = "disk-inventory-x";
         greedy = true;
       }
       {
@@ -66,19 +62,15 @@
         greedy = true;
       }
       {
+        name = "netdata"; # Real-time performance monitoring
+        greedy = true;
+      }
+      {
         name = "windows-app"; # RDP client
         greedy = true;
       }
       {
-        name = "obsidian"; # 2nd Brain
-        greedy = true;
-      }
-      {
         name = "raycast" ; # Spotlight replacement
-        greedy = true;
-      }
-      {
-        name = "spotify"; #Muzak
         greedy = true;
       }
       {
@@ -89,7 +81,7 @@
     brews = [ 
       "awscli" # Breaks when done nix native
       "fzf" # Nix native is behind
-      "oh-my-posh"
+      "oh-my-posh" # Terminal prompt config for nu
       "igrep"
       "trippy" # Move to Nix native ?
       "uv" # Python Package Manager
