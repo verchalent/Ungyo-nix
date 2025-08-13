@@ -62,10 +62,6 @@
         greedy = true;
       }
       {
-        name = "netdata"; # Real-time performance monitoring
-        greedy = true;
-      }
-      {
         name = "windows-app"; # RDP client
         greedy = true;
       }
@@ -83,6 +79,7 @@
       "fzf" # Nix native is behind
       "oh-my-posh" # Terminal prompt config for nu
       "igrep"
+      "netdata"
       "trippy" # Move to Nix native ?
       "uv" # Python Package Manager
       "zoxide" # Nix native is behind
