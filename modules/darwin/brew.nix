@@ -62,6 +62,22 @@
         greedy = true;
       }
       {
+        name = "obs"; # OBS Studio for screen recording
+        greedy = true;
+      }
+      {
+        name = "notion"; # Note taking app
+        greedy = true;
+      }
+      {
+        name = "obsidian"; # Note taking app
+        greedy = true;
+      }
+      {
+        name = "rectangle"; # Window management
+        greedy = true;
+      }
+      {
         name = "windows-app"; # RDP client
         greedy = true;
       }
