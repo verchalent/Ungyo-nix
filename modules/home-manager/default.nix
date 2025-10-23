@@ -56,8 +56,11 @@
 
   programs.git = { #Nix was smashing git config. Added 03.25
     enable = true;
-    userName = "PestyLint";
-    userEmail = "me@example.com";
+    settings = {
+      userName = "PestyLint";
+      userEmail = "me@example.com";
+    };
+
     includes = [
       { path = "~/.gitconfig.local"; }
     ];

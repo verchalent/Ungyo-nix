@@ -62,10 +62,6 @@
         greedy = true;
       }
       {
-        name = "obs"; # OBS Studio for screen recording
-        greedy = true;
-      }
-      {
         name = "notion"; # Note taking app
         greedy = true;
       }
@@ -83,6 +79,9 @@
       }
       {
         name = "raycast" ; # Spotlight replacement
+        greedy = true;
+      }
+      {name = "vcam"; # Virtual Camera
         greedy = true;
       }
       {
