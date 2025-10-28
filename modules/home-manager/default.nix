@@ -57,8 +57,8 @@
   programs.git = { #Nix was smashing git config. Added 03.25
     enable = true;
     settings = {
-      userName = "PestyLint";
-      userEmail = "me@example.com";
+      user.name = "PestyLint";
+      user.email = "me@example.com";
     };
 
     includes = [
