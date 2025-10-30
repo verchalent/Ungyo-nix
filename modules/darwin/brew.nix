@@ -50,27 +50,31 @@
         greedy = true;
       }
       {
-        name = "geany"; # notepad++ replacement
+        name = "insta360-link-controller";
         greedy = true;
-      } 
+      }
+      {
+        name = "firefox"; # Firefox browser
+        greedy = true;
+      }
+      {
+        name = "font-fira-code"; # Nerd Font for terminal
+        greedy = true;
+      }
+      {
+        name = "iterm2"; # Terminal replacement
+        greedy = true;
+      }
+      {
+        name = "keepingyouawake"; # Prevents sleep
+        greedy = true;
+      }
       {
         name = "lulu"; #  Firewall 
         greedy = true;
       }
       {
         name = "microsoft-edge"; # Edge for use with M365 items 
-        greedy = true;
-      }
-      {
-        name = "notion"; # Note taking app
-        greedy = true;
-      }
-      {
-        name = "obsidian"; # Note taking app
-        greedy = true;
-      }
-      {
-        name = "rectangle"; # Window management
         greedy = true;
       }
       {
