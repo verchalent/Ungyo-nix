@@ -11,6 +11,7 @@
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
+  nix.enable = false; # Disable nix daemon on darwin for use with determinate
   system.keyboard.enableKeyMapping = true;
   system.keyboard.remapCapsLockToEscape = true;
   fonts.packages = [ 
@@ -79,19 +80,6 @@
         spans-displays = false; # Disable spanning displays
       };
 
-      ### Laptop Settings
-      /*
-      keyboard = {
-        enableKeyMapping = true;
-        swapLeftCtrlAndFn = true; # Swap left control and fn keys
-      };
-
-      trackpad = {
-        Clicking = true; # Enable tapping the trackpad to click
-        TrackpadThreeFingerDrag = false; # Enable/disable three-finger drag. Default is false.
-      };
-      */
-      
       menuExtraClock.Show24Hour = true; # Set Clock to 24 Hour Mode
       loginwindow.GuestEnabled = false; # Disable guest account
     };
