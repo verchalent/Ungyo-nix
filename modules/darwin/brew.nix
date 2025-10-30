@@ -54,19 +54,7 @@
         greedy = true;
       }
       {
-        name = "firefox"; # Firefox browser
-        greedy = true;
-      }
-      {
-        name = "font-fira-code"; # Nerd Font for terminal
-        greedy = true;
-      }
-      {
-        name = "iterm2"; # Terminal replacement
-        greedy = true;
-      }
-      {
-        name = "keepingyouawake"; # Prevents sleep
+        name = "ghostty"; # Terminal
         greedy = true;
       }
       {
@@ -78,18 +66,15 @@
         greedy = true;
       }
       {
-        name = "windows-app"; # RDP client
-        greedy = true;
-      }
-      {
         name = "raycast" ; # Spotlight replacement
-        greedy = true;
-      }
-      {name = "vcam"; # Virtual Camera
         greedy = true;
       }
       {
         name = "visual-studio-code"; # Make code pretty
+        greedy = true;
+      }
+      {
+        name = "windows-app"; # RDP client
         greedy = true;
       }
     ];
