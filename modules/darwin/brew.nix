@@ -72,6 +72,10 @@
         greedy = true;
       }
       {
+        name = "vcam"; # Virtual Camera
+        greedy = true;
+      }
+      {
         name = "windows-app"; # RDP client
         greedy = true;
       }
