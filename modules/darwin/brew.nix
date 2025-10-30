@@ -28,7 +28,11 @@
         ];
     casks = [ 
       {
-        name = "alacritty"; # Terminal
+        name = "1password"; # Password manager
+        greedy = true;
+      }
+      {
+        name = "1password-cli"; # CLI for 1password
         greedy = true;
       }  
       {
