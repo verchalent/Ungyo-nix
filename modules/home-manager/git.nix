@@ -4,11 +4,6 @@
     settings = {
         userName = "PestyLint";
         userEmail = "me@example.com";
-    };
-    includes = [
-      { path = "~/.gitconfig.local"; }
-    ];
-    extraConfig = {
         push.autoSetupRemote = true;
         pull.rebase = true;
         fetch.prune = true;
@@ -20,5 +15,8 @@
         user.signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILi+OcRdb7L6hiLF0LO0UqktVP3iXSqrESQQ8YD8MoHJ";
         gpg.ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
     };
+    includes = [
+      { path = "~/.gitconfig.local"; }
+    ];
   };
 }
