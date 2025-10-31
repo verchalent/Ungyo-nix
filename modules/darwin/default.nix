@@ -23,7 +23,7 @@
   system = {
     primaryUser = "justin";
 
-    stateVersion = 4;
+    stateVersion = 6;
 
     defaults = {
       ActivityMonitor = {
@@ -38,7 +38,7 @@
         orientation = "left"; # Set Position of the dock on screen
         persistent-apps = [
           {
-            app = "/Applications/Alacritty.app";
+            app = "/Applications/Ghostty.app";
           }
           {
             app = "/System/Applications/System Settings.app";
@@ -50,14 +50,14 @@
         show-recents = false; # Turn off recents in Dock
         tilesize = 48; # Size of the icons in the dock.
       };
-    
-      finder = {
+          finder = {
         _FXShowPosixPathInTitle = true; # Show the full POSIX filepath in the window title
         _FXSortFoldersFirst = true; # Sort folders first in Finder
         AppleShowAllExtensions = true; # Show all file extensions in Finder.
         FXEnableExtensionChangeWarning = false; # Disable the warning when changing file extensions
         FXPreferredViewStyle = "Nlsv"; # Change the default finder view. “icnv” = Icon view, “Nlsv” = List view, “clmv” = Column View, “Flwv” = Gallery View The default is icnv.
         FXRemoveOldTrashItems = true; # Remove old trash items after 30 days
+        NewWindowTarget = "Home"; # Set the default new window target to home directory
         QuitMenuItem = true; # Enable the Quit menu item in Finder
         ShowExternalHardDrivesOnDesktop = true; # Show external hard drives on the desktop
         ShowHardDrivesOnDesktop = false; # Don't show internal hard drives on the desktop
@@ -67,12 +67,16 @@
         ShowStatusBar = true; # Show status bar at bottom of finder windows with item/disk space stats.
       };
 
+      LaunchServices.LSQuarantine = false; # Disable quarantine for all applications - Prob not a great idea to leave this... 
+      
       NSGlobalDomain = {
         AppleShowAllExtensions = true; # Show all file extensions
         InitialKeyRepeat = 14; # speed up key repeat behavior
         KeyRepeat = 1;
+        "com.apple.sound.beep.feedback" = 0; # Disable system beep feedback
         "com.apple.sound.beep.volume" = 0.000; # Mute alert volume
         "com.apple.swipescrolldirection" = false; # Disable Natural Scrolling direction
+        "com.apple.mouse.tapBehavior" = 1; # Enable tap to click
         NSDocumentSaveNewDocumentsToCloud = false; # Save new documents to local disk
       };
 
@@ -80,8 +84,23 @@
         spans-displays = false; # Disable spanning displays
       };
 
+      trackpad = {
+        Clicking = true; # Enable tapping the trackpad to click
+        TrackpadThreeFingerDrag = false; # Enable/disable three-finger drag. Default is false.
+      };
+      
       menuExtraClock.Show24Hour = true; # Set Clock to 24 Hour Mode
-      loginwindow.GuestEnabled = false; # Disable guest account
+      loginwindow = {
+        DisableConsoleAccess = true; # Disables the ability for a user to access the console by typing “>console” for a username at the login window.
+        GuestEnabled = false; # Disable guest account
+        SHOWFULLNAME = false;
+      };
+
+      WindowManager ={
+        EnableStandardClickToShowDesktop = false; # Enable standard click to show desktop
+        StageManagerHideWidgets = true; # Hide widgets in stage manager
+      };
+
     };
   };
 }
