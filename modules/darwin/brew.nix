@@ -60,6 +60,10 @@
         greedy = true;
       }
       {
+        name = "logitech-g-hub"; # Logitech device management  
+        greedy = true;
+      }
+      {
         name = "lulu"; #  Firewall 
         greedy = true;
       }
