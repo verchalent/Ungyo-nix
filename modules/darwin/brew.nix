@@ -52,10 +52,6 @@
         greedy = true;
       }
       {
-        name = "insta360-link-controller";
-        greedy = true;
-      }
-      {
         name = "ghostty"; # Terminal
         greedy = true;
       }
