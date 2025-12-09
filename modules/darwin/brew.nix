@@ -56,6 +56,10 @@
         greedy = true;
       }
       {
+        name = "insta360-link-controller"; # Insta360 webcam controller
+        greedy = true;
+      }
+      {
         name = "logitech-g-hub"; # Logitech device management  
         greedy = true;
       }
