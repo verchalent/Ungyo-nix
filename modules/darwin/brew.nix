@@ -60,10 +60,6 @@
         greedy = true;
       }
       {
-        name = "logitech-g-hub"; # Logitech device management  
-        greedy = true;
-      }
-      {
         name = "lulu"; #  Firewall 
         greedy = true;
       }
@@ -90,12 +86,15 @@
     ];
     brews = [ 
       "awscli" # Breaks when done nix native
+      "curl" # the magical curl command
       "fzf" # Nix native is behind
+      "mas" # Mac app store
       "oh-my-posh" # Terminal prompt config for nu
       "igrep"
       "netdata"
       "trippy" # Move to Nix native ?
       "uv" # Python Package Manager
+      "zellij" # Moved from nix to brew - 082025 (nix is behind)
       "zoxide" # Nix native is behind
       ]; 
   };

@@ -2,28 +2,21 @@
   imports = [
     ./zsh.nix
     ./tmux.nix
-    ./nu.nix
     ./git.nix
     ];
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
   # specify my home-manager configs
   home.packages = with pkgs; [
-    curl
     fd
     helix
     less
     lsd
-    mpv
     neofetch
     neovim
-    podman
-    powershell
     python3
     procs
     ripgrep
     tealdeer
-    vimPlugins.tmux-nvim
-    zellij
     zsh-powerlevel10k
   ];
 
