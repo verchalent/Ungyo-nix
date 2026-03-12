@@ -7,11 +7,12 @@
   home.stateVersion = "25.11";
   # specify my home-manager configs
   home.packages = with pkgs; [
+    fastfetch
     fd
     helix
     less
     lsd
-    neofetch
+   # neofetch
     neovim
     python3
     procs
