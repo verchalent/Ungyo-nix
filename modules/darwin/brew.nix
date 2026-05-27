@@ -48,6 +48,10 @@
         greedy = true;
       }
       {
+        name = "claude";
+        greedy = true;
+      }
+      {
         name = "disk-inventory-x";
         greedy = true;
       }
