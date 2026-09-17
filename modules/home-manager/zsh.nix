@@ -10,7 +10,7 @@
         initContent = ''
         eval "$(zellij setup --generate-auto-start zsh)"
 
-        zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+        zstyle ':completion:*' matcher-list "" 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 
         # zsh-prompt-evolution: antidote replaces oh-my-zsh (mirrors amatarsu's
         # tested setup). Some omz plugins (chezmoi, podman) expect omz's
