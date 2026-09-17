@@ -87,7 +87,8 @@
         greedy = true;
       }
     ];
-    brews = [ 
+    brews = [
+      "antidote" # zsh plugin manager, replaces oh-my-zsh (zsh-prompt-evolution migration)
       "awscli" # Breaks when done nix native
       "curl" # the magical curl command
       "fzf" # Nix native is behind
@@ -95,10 +96,11 @@
       "oh-my-posh" # Terminal prompt config for nu
       "igrep"
       "netdata"
+      "starship" # prompt, replaces powerlevel10k (zsh-prompt-evolution migration)
       "trippy" # Move to Nix native ?
       "uv" # Python Package Manager
       "zellij" # Moved from nix to brew - 082025 (nix is behind)
       "zoxide" # Nix native is behind
-      ]; 
+      ];
   };
 }

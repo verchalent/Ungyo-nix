@@ -2,25 +2,30 @@
     programs.zsh = {
         enable = true;
         enableCompletion = true;
-        autosuggestion.enable = true;
-        syntaxHighlighting.enable = true;
+        # zsh-prompt-evolution: autosuggestions + syntax-highlighting come from
+        # the antidote bundle below instead, so the plugin isn't loaded twice.
+        autosuggestion.enable = false;
+        syntaxHighlighting.enable = false;
 
         initContent = ''
         eval "$(zellij setup --generate-auto-start zsh)"
-        [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-        ''; # Init Zellij and Powerlevel10k in new zsh shell
-       plugins = [
-         {
-           name = "powerlevel10k";
-           src = pkgs.zsh-powerlevel10k;
-           file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-         }
-       ];
 
-        localVariables = {
-            POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD = true;
-            ZSH_THEME = "powerlevel10k/powerlevel10k";
-        };
+        zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+
+        # zsh-prompt-evolution: antidote replaces oh-my-zsh (mirrors amatarsu's
+        # tested setup). Some omz plugins (chezmoi, podman) expect omz's
+        # $ZSH_CACHE_DIR global to write generated completions into.
+        export ZSH_CACHE_DIR="$HOME/.cache/zsh"
+        mkdir -p "$ZSH_CACHE_DIR/completions"
+        source "$(brew --prefix antidote)/share/antidote/antidote.zsh"
+        antidote load "$HOME/.config/zsh/.zsh_plugins.txt"
+
+        # was ENABLE_CORRECTION="true" under oh-my-zsh
+        setopt correct
+
+        # zsh-prompt-evolution: starship replaces powerlevel10k
+        eval "$(starship init zsh)"
+        ''; # Init Zellij, antidote plugins, starship prompt, case-insensitive tab completion
 
         shellAliases = {
             brewup = "brew update && brew upgrade && brew cleanup --prune=all";
