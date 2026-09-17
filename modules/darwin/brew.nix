@@ -51,10 +51,6 @@
         greedy = true;
       }
       {
-        name = "disk-inventory-x";
-        greedy = true;
-      }
-      {
         name = "ghostty"; # Terminal
         greedy = true;
       }
